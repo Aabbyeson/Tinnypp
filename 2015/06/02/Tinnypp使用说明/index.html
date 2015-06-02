@@ -125,10 +125,16 @@ var _hmt = _hmt || [];
 <span class="variable">$ </span>git pull
 </code></pre><h3 id="设置本主题">设置本主题</h3>
 <p>编辑<code>Tinnypp/_config.yml</code>文件即可。</p>
-<p>本主题内置:</p>
-<p>1.<a href="https://swiftype.com/" target="_blank" rel="external">swiftype</a>作为站内搜索引擎，如果你想使用这个酷炫的搜索，请在<code>Tinnypp/layout/_partial/head.ejs</code>里将最后一个<code>&lt;script&gt;&lt;/script&gt;</code>标签改为你的swiftype安装代码。:)</p>
-<p>2.<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>作为评论系统，可在<code>Tinnypp/_config.yml</code>中开启或关闭。此外如果你想显示评论者的<a href="http://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E4%BB%A3%E7%90%86" target="_blank" rel="external">user agent</a>，可直接修改<code>themes/Tinnypp/layout/_partial/after_footer.ejs</code>里的<code>ds.src = ‘//static.duoshuo.com/embed.js’;</code>为<code>‘ds.src = ‘&lt;%- config.root %&gt;js/embed.js’’;</code>，并在你的多说里添加这个<a href="https://github.com/levonlin/Tinnypp/blob/master/source/css/%E5%A4%9A%E8%AF%B4%E8%87%AA%E5%AE%9A%E4%B9%89.css" target="_blank" rel="external">自定义css</a>即可。若还想显示你的“博主头衔”，请记得编辑<code>Tinnypp/source/js/embed.js</code>里的<code>e.user_id == your duoshuo ID</code>。</p>
-<p>3.中文显示在博客文件夹下的<code>_config.yml</code>设置</p>
+<p>本主题:</p>
+<p>1.使用<a href="https://swiftype.com/" target="_blank" rel="external">swiftype</a>作为站内搜索引擎，如果你想使用这个酷炫的搜索，请在<code>Tinnypp/layout/_partial/head.ejs</code>里将最后一个<code>&lt;script&gt;&lt;/script&gt;</code>标签改为你的swiftype安装代码。:)</p>
+<p>2.使用<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>作为评论系统，可在<code>Tinnypp/_config.yml</code>中开启或关闭。此外如果你想显示评论者的<a href="http://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E4%BB%A3%E7%90%86" target="_blank" rel="external">user agent</a>，可直接修改<code>themes/Tinnypp/layout/_partial/after_footer.ejs</code>里的<code>ds.src = ‘//static.duoshuo.com/embed.js’;</code>为<code>‘ds.src = ‘&lt;%- config.root %&gt;js/embed.js’’;</code>，并在你的多说里添加这个<a href="https://github.com/levonlin/Tinnypp/blob/master/source/css/%E5%A4%9A%E8%AF%B4%E8%87%AA%E5%AE%9A%E4%B9%89.css" target="_blank" rel="external">自定义css</a>即可。若还想显示你的“博主头衔”，请记得编辑<code>Tinnypp/source/js/embed.js</code>里的<code>e.user_id == your duoshuo ID</code>。</p>
+<p>3.已经设置/atom.xml为rss源。要使用rss,先安装hexo的rss插件：</p>
+<pre><code><span class="variable">$npm</span> install hexo-generator-feed
+</code></pre><p>然后添加 </p>
+<pre><code>plugin<span class="variable">s:</span>
+- hexo-generator-feed
+</code></pre><p>到博客文件夹下的<code>_config.yml</code>。</p>
+<p>4.中文显示在博客文件夹下的<code>_config.yml</code>设置</p>
 <pre><code><span class="attribute">language</span>: <span class="string">zh-CN</span>
 </code></pre><p>即可。但若想在文章发布日期有符合中文习惯的显示，请在<code>_config.yml</code>里继续设置</p>
 <pre><code><span class="attribute">month_format</span>: <span class="string">YYYY年 MMM</span>
