@@ -1054,11 +1054,16 @@ article .article-content table {
 article .article-content table th {
   font-weight: bold;
   border-bottom: 3px solid #dbdbdb;
-  padding-bottom: 0.5em;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  padding: 0.5em 0.5em;
 }
 article .article-content table td {
   border-bottom: 1px solid #dbdbdb;
-  padding: 10px 0;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  padding: 0.5em 0.5em;
 }
 article .article-content .pullquote {
   text-align: left;
