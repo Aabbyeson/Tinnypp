@@ -945,7 +945,7 @@ article .article-content blockquote {
   margin: 0.65em 0 0.65em 4%;
   padding-left: 1%;
   line-height: 1.5;
-  font-size: 115%;
+  font-size: 95%;
 }
 article .article-content blockquote footer {
   background: #fafafa;
@@ -961,7 +961,7 @@ article .article-content blockquote cite {
 article .article-content ul,
 article .article-content ol {
   padding-left: 2em;
-  font-size: 110%;
+  font-size: 100%;
 }
 @media only screen and (min-width: 768px) {
   article .article-content ul,
@@ -1416,7 +1416,7 @@ section.comment {
 }
 #toc {
   line-height: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   float: right;
 }
 #toc .toc {
@@ -1892,6 +1892,11 @@ footer {
   background: #1f1f1f;
   padding: 0 2% 0.5em;
 }
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 #footer {
   width: 95%;
   margin: 0 auto;
@@ -1928,6 +1933,7 @@ footer {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "covered_by_your_graceregular";
+  font-size: 0.9em;
   width: 100%;
   color: #fff;
   text-align: center;

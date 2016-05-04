@@ -92,10 +92,10 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/Tinnypp/2015/06/01/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/Tinnypp/2015/06/02/hello-world/" title="Hello World" itemprop="url">Hello World</a>
   </h1>
   <p class="article-time">
-    <time datetime="2015-06-01T15:53:41.000Z" itemprop="datePublished">2015年 6月 1日</time>
+    <time datetime="2015-06-02T11:56:26.392Z" itemprop="datePublished">2015年 6月 2日</time>
   </p>
 </header>
 	<div class="article-content">
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2015/06/01/hello-world/" data-title="Hello World | Tinnypp" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2015/06/02/hello-world/" data-title="Hello World | Tinnypp" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -163,8 +163,15 @@ var _hmt = _hmt || [];
 
 </div>  
     </div>
-    <!--<footer><div id="footer" >
-</div></footer>-->
+    <footer><div id="footer" >
+	<div class="copyright">
+		<span>Powered by <a href="https://github.com/hexojs/hexo">Hexo</a> and theme by 
+		<a href="https://github.com/levonlin/Tinnypp">Tinnypp</a>.</span>
+		
+			<span>© Levon</span>
+		
+	<div>
+</div></footer>
     <script src="/Tinnypp/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -332,6 +339,19 @@ $(document).ready(function(){
 }); 
 </script>
 
+<script type="text/javascript">
+  function footerPosition() {
+    var contentHeight = document.documentElement.scrollHeight,
+        winHeight = window.innerHeight;
+    if(contentHeight <= winHeight) {
+      $('footer').addClass('fixed-bottom');
+    } else {
+      $('footer').removeClass('fixed-bottom');
+    }
+  }
+  footerPosition();
+  $(window).resize(footerPosition);
+</script>
 
 
   </body>

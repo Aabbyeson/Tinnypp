@@ -161,7 +161,7 @@ var _hmt = _hmt || [];
  
 
 <div class="next">
-<a href="/Tinnypp/2015/06/01/hello-world/"  title="Hello World">
+<a href="/Tinnypp/2015/06/02/hello-world/"  title="Hello World">
  <strong>旧一篇:</strong><br/> 
  <span>Hello World
 </span>
@@ -180,8 +180,15 @@ var _hmt = _hmt || [];
 
 </div>  
     </div>
-    <!--<footer><div id="footer" >
-</div></footer>-->
+    <footer><div id="footer" >
+	<div class="copyright">
+		<span>Powered by <a href="https://github.com/hexojs/hexo">Hexo</a> and theme by 
+		<a href="https://github.com/levonlin/Tinnypp">Tinnypp</a>.</span>
+		
+			<span>© Levon</span>
+		
+	<div>
+</div></footer>
     <script src="/Tinnypp/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -349,6 +356,19 @@ $(document).ready(function(){
 }); 
 </script>
 
+<script type="text/javascript">
+  function footerPosition() {
+    var contentHeight = document.documentElement.scrollHeight,
+        winHeight = window.innerHeight;
+    if(contentHeight <= winHeight) {
+      $('footer').addClass('fixed-bottom');
+    } else {
+      $('footer').removeClass('fixed-bottom');
+    }
+  }
+  footerPosition();
+  $(window).resize(footerPosition);
+</script>
 
 
   </body>

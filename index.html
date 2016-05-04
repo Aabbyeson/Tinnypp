@@ -123,7 +123,7 @@ $ git clone git@github.com:levonlin/Tinnypp.git
   <article>
     <h1 itemprop="name">
       
-        <a href="/Tinnypp/2015/06/01/hello-world/" title="Hello World" itemprop="url">
+        <a href="/Tinnypp/2015/06/02/hello-world/" title="Hello World" itemprop="url">
       
         Hello World
       </a>
@@ -134,9 +134,9 @@ $ git clone git@github.com:levonlin/Tinnypp.git
         
     
     <p class="article-more-link">
-      <time datetime="2015-06-01T15:53:41.000Z" itemprop="datePublished">2015年 6月 1日</time>
+      <time datetime="2015-06-02T11:56:26.392Z" itemprop="datePublished">2015年 6月 2日</time>
       
-          <a href="/Tinnypp/2015/06/01/hello-world/">阅读更多&raquo;</a>
+          <a href="/Tinnypp/2015/06/02/hello-world/">阅读更多&raquo;</a>
       
     </p>
 
@@ -183,8 +183,15 @@ $ git clone git@github.com:levonlin/Tinnypp.git
 </aside>
 </div>
     </div>
-    <!--<footer><div id="footer" >
-</div></footer>-->
+    <footer><div id="footer" >
+	<div class="copyright">
+		<span>Powered by <a href="https://github.com/hexojs/hexo">Hexo</a> and theme by 
+		<a href="https://github.com/levonlin/Tinnypp">Tinnypp</a>.</span>
+		
+			<span>© Levon</span>
+		
+	<div>
+</div></footer>
     <script src="/Tinnypp/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -264,6 +271,19 @@ $(document).ready(function(){
 
 
 
+<script type="text/javascript">
+  function footerPosition() {
+    var contentHeight = document.documentElement.scrollHeight,
+        winHeight = window.innerHeight;
+    if(contentHeight <= winHeight) {
+      $('footer').addClass('fixed-bottom');
+    } else {
+      $('footer').removeClass('fixed-bottom');
+    }
+  }
+  footerPosition();
+  $(window).resize(footerPosition);
+</script>
 
 
   </body>
